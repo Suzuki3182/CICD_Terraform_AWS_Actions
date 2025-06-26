@@ -13,6 +13,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: List files in working directory (before build)
+      run: ls -la
+
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
@@ -26,6 +29,9 @@ jobs:
 
     - name: Build application
       run: npm run build
+
+    - name: List files in working directory (after build)
+      run: ls -la
 
     - name: Deploy to EC2
       env:
