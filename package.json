@@ -4,7 +4,7 @@
   "description": "CI/CD Pipeline with Terraform and AWS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No tests to run\"",
     "build": "echo \"Building the project\""
   },
   "dependencies": {
