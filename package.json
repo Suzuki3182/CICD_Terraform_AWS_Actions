@@ -4,14 +4,16 @@
   "description": "CI/CD Pipeline with Terraform and AWS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests to run\"",
-    "build": "echo \"Building the project\""
+    "test": "jest",
+    "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "jest": "^26.6.0"
+    "jest": "^26.6.0",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0"
   },
   "author": "Your Name",
   "license": "ISC"
